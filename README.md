@@ -1,10 +1,10 @@
-OS2Web Borgerservices
+OS2Web Citizen Services
 ==============================
 
 Description
 -----------
 This module provides a contenttype and view to show a list of
-services (borgerservices). A service consists of an image and an url.
+services/citizen services (borgerservices). A service consists of an image and an url.
 
 Dependencies
 -----------

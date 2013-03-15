@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * os2web_borgerservices.features.inc
+ * os2web_citizenservices.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function os2web_borgerservices_ctools_plugin_api() {
+function os2web_citizenservices_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
@@ -17,19 +17,19 @@ function os2web_borgerservices_ctools_plugin_api() {
 /**
  * Implements hook_views_api().
  */
-function os2web_borgerservices_views_api() {
+function os2web_citizenservices_views_api() {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_image_default_styles().
  */
-function os2web_borgerservices_image_default_styles() {
+function os2web_citizenservices_image_default_styles() {
   $styles = array();
 
-  // Exported image style: os2web_borgerservices_image.
-  $styles['os2web_borgerservices_image'] = array(
-    'name' => 'os2web_borgerservices_image',
+  // Exported image style: os2web_citizenservices_image.
+  $styles['os2web_citizenservices_image'] = array(
+    'name' => 'os2web_citizenservices_image',
     'effects' => array(
       12 => array(
         'label' => 'Skalér og beskær',
@@ -55,9 +55,9 @@ function os2web_borgerservices_image_default_styles() {
 /**
  * Implements hook_node_info().
  */
-function os2web_borgerservices_node_info() {
+function os2web_citizenservices_node_info() {
   $items = array(
-    'os2web_borgerservices_service' => array(
+    'os2web_citizenservices_service' => array(
       'name' => t('Borgerservices'),
       'base' => 'node_content',
       'description' => '',

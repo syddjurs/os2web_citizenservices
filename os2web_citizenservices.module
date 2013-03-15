@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OS2Web Citizen Services feature.
+ */
+
+include_once 'os2web_citizenservices.features.inc';

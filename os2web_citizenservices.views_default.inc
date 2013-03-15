@@ -1,17 +1,17 @@
 <?php
 /**
  * @file
- * os2web_borgerservices.views_default.inc
+ * os2web_citizenservices.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function os2web_borgerservices_views_default_views() {
+function os2web_citizenservices_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'os2web_borgerservices_view';
+  $view->name = 'os2web_citizenservices_view';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
@@ -46,21 +46,21 @@ function os2web_borgerservices_views_default_views() {
   $handler->display->display_options['header']['area']['content'] = '<h3>Populære borgerservices</h3>';
   $handler->display->display_options['header']['area']['format'] = 'php_code';
   /* Field: Content: URL */
-  $handler->display->display_options['fields']['field_os2web_borgerservices_url']['id'] = 'field_os2web_borgerservices_url';
-  $handler->display->display_options['fields']['field_os2web_borgerservices_url']['table'] = 'field_data_field_os2web_borgerservices_url';
-  $handler->display->display_options['fields']['field_os2web_borgerservices_url']['field'] = 'field_os2web_borgerservices_url';
-  $handler->display->display_options['fields']['field_os2web_borgerservices_url']['label'] = '';
-  $handler->display->display_options['fields']['field_os2web_borgerservices_url']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_os2web_borgerservices_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_os2web_citizenservices_url']['id'] = 'field_os2web_citizenservices_url';
+  $handler->display->display_options['fields']['field_os2web_citizenservices_url']['table'] = 'field_data_field_os2web_citizenservices_url';
+  $handler->display->display_options['fields']['field_os2web_citizenservices_url']['field'] = 'field_os2web_citizenservices_url';
+  $handler->display->display_options['fields']['field_os2web_citizenservices_url']['label'] = '';
+  $handler->display->display_options['fields']['field_os2web_citizenservices_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_os2web_citizenservices_url']['element_label_colon'] = FALSE;
   /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_os2web_borgerservices_img']['id'] = 'field_os2web_borgerservices_img';
-  $handler->display->display_options['fields']['field_os2web_borgerservices_img']['table'] = 'field_data_field_os2web_borgerservices_img';
-  $handler->display->display_options['fields']['field_os2web_borgerservices_img']['field'] = 'field_os2web_borgerservices_img';
-  $handler->display->display_options['fields']['field_os2web_borgerservices_img']['label'] = '';
-  $handler->display->display_options['fields']['field_os2web_borgerservices_img']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_os2web_borgerservices_img']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_os2web_borgerservices_img']['settings'] = array(
-    'image_style' => 'os2web_borgerservices_image',
+  $handler->display->display_options['fields']['field_os2web_citizenservices_img']['id'] = 'field_os2web_citizenservices_img';
+  $handler->display->display_options['fields']['field_os2web_citizenservices_img']['table'] = 'field_data_field_os2web_citizenservices_img';
+  $handler->display->display_options['fields']['field_os2web_citizenservices_img']['field'] = 'field_os2web_citizenservices_img';
+  $handler->display->display_options['fields']['field_os2web_citizenservices_img']['label'] = '';
+  $handler->display->display_options['fields']['field_os2web_citizenservices_img']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_os2web_citizenservices_img']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_os2web_citizenservices_img']['settings'] = array(
+    'image_style' => 'os2web_citizenservices_image',
     'image_link' => '',
   );
   /* Field: Content: Title */
@@ -71,7 +71,7 @@ function os2web_borgerservices_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['text'] = '<div class="lineHeightHack">[title]</div>';
   $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_os2web_borgerservices_url]';
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_os2web_citizenservices_url]';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
@@ -93,14 +93,14 @@ function os2web_borgerservices_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'os2web_borgerservices_service' => 'os2web_borgerservices_service',
+    'os2web_citizenservices_service' => 'os2web_citizenservices_service',
   );
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['block_description'] = 'Populære borgerservices';
-  $translatables['os2web_borgerservices_view'] = array(
+  $translatables['os2web_citizenservices_view'] = array(
     t('Master'),
     t('Borgerservices'),
     t('mere'),
@@ -115,7 +115,7 @@ function os2web_borgerservices_views_default_views() {
     t('more'),
     t('Populære borgerservices'),
   );
-  $export['os2web_borgerservices_view'] = $view;
+  $export['os2web_citizenservices_view'] = $view;
 
   return $export;
 }
