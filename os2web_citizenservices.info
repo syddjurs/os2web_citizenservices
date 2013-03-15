@@ -1,4 +1,4 @@
-name = OS2Web Citizen Services
+name = OS2Web Citizen Services (Borgerservices)
 core = 7.x
 package = OS2Web - Struktur
 php = 5.2.4

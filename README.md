@@ -1,4 +1,4 @@
-OS2Web Citizen Services
+OS2Web Citizen Services (Borgerservices)
 ==============================
 
 Description
