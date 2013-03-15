@@ -1,23 +1,23 @@
 <?php
 /**
  * @file
- * os2web_borgerservices.features.field.inc
+ * os2web_citizenservices.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function os2web_borgerservices_field_default_fields() {
+function os2web_citizenservices_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-os2web_borgerservices_service-field_os2web_borgerservices_img'.
-  $fields['node-os2web_borgerservices_service-field_os2web_borgerservices_img'] = array(
+  // Exported field: 'node-os2web_citizenservices_service-field_os2web_citizenservices_img'.
+  $fields['node-os2web_citizenservices_service-field_os2web_citizenservices_img'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_os2web_borgerservices_img',
+      'field_name' => 'field_os2web_citizenservices_img',
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -41,7 +41,7 @@ function os2web_borgerservices_field_default_fields() {
       'type' => 'image',
     ),
     'field_instance' => array(
-      'bundle' => 'os2web_borgerservices_service',
+      'bundle' => 'os2web_citizenservices_service',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -69,7 +69,7 @@ function os2web_borgerservices_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_os2web_borgerservices_img',
+      'field_name' => 'field_os2web_citizenservices_img',
       'label' => 'Billede',
       'required' => 0,
       'settings' => array(
@@ -114,14 +114,14 @@ function os2web_borgerservices_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-os2web_borgerservices_service-field_os2web_borgerservices_url'.
-  $fields['node-os2web_borgerservices_service-field_os2web_borgerservices_url'] = array(
+  // Exported field: 'node-os2web_citizenservices_service-field_os2web_citizenservices_url'.
+  $fields['node-os2web_citizenservices_service-field_os2web_citizenservices_url'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_os2web_borgerservices_url',
+      'field_name' => 'field_os2web_citizenservices_url',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -144,7 +144,7 @@ function os2web_borgerservices_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'os2web_borgerservices_service',
+      'bundle' => 'os2web_citizenservices_service',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -170,7 +170,7 @@ function os2web_borgerservices_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_os2web_borgerservices_url',
+      'field_name' => 'field_os2web_citizenservices_url',
       'label' => 'URL',
       'required' => 1,
       'settings' => array(
