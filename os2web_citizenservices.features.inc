@@ -41,10 +41,10 @@ function os2web_citizenservices_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '159',
-          'height' => '94',
+          'width' => 159,
+          'height' => 94,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
