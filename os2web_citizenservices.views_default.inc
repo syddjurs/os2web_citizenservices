@@ -39,20 +39,20 @@ function os2web_citizenservices_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '9';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Header: Global: Text area */
+  /* Overskrift: Global: Tekstområde */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<h3>Populære borgerservices</h3>';
   $handler->display->display_options['header']['area']['format'] = 'php_code';
-  /* Field: Content: URL */
+  /* Felt: Indhold: URL */
   $handler->display->display_options['fields']['field_os2web_citizenservices_url']['id'] = 'field_os2web_citizenservices_url';
   $handler->display->display_options['fields']['field_os2web_citizenservices_url']['table'] = 'field_data_field_os2web_citizenservices_url';
   $handler->display->display_options['fields']['field_os2web_citizenservices_url']['field'] = 'field_os2web_citizenservices_url';
   $handler->display->display_options['fields']['field_os2web_citizenservices_url']['label'] = '';
   $handler->display->display_options['fields']['field_os2web_citizenservices_url']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_os2web_citizenservices_url']['element_label_colon'] = FALSE;
-  /* Field: Content: Billede */
+  /* Felt: Indhold: Billede */
   $handler->display->display_options['fields']['field_os2web_citizenservices_img']['id'] = 'field_os2web_citizenservices_img';
   $handler->display->display_options['fields']['field_os2web_citizenservices_img']['table'] = 'field_data_field_os2web_citizenservices_img';
   $handler->display->display_options['fields']['field_os2web_citizenservices_img']['field'] = 'field_os2web_citizenservices_img';
@@ -63,7 +63,7 @@ function os2web_citizenservices_views_default_views() {
     'image_style' => 'os2web_citizenservices_image',
     'image_link' => '',
   );
-  /* Field: Content: Title */
+  /* Felt: Indhold: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -76,19 +76,19 @@ function os2web_citizenservices_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Sort criterion: Content: Post date */
+  /* Sorteringskriterie: Indhold: Oprettelsesdato */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Content: Published */
+  /* Filterkriterie: Indhold: Udgivet */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -112,7 +112,6 @@ function os2web_citizenservices_views_default_views() {
     t('<h3>Populære borgerservices</h3>'),
     t('<div class="lineHeightHack">[title]</div>'),
     t('Block'),
-    t('more'),
     t('Populære borgerservices'),
   );
   $export['os2web_citizenservices_view'] = $view;
